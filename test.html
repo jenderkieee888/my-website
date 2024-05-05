@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>固定大小的透明风格导航按钮</title>
+  <style>
+    /* 按钮通用样式 */
+.button-nav {
+    display: inline-block; /* 使按钮内联显示，方便设置宽度 */
+    width: 170px; /* 固定按钮宽度，根据需要调整 */
+    padding: 10px 0; /* 垂直填充，保持按钮高度一致 */
+    border: 2px solid #89c967; /* 浅绿色边框 */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #89c967; /* 浅绿色文字 */
+    background-color: transparent; /* 透明背景 */
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: center; /* 文本居中 */
+    position: relative;
+  }
+  
+  .button-nav:hover {
+    background-color: rgba(137, 201, 103, 0.2); /* 鼠标悬停时的背景色 */
+  }
+  
+  /* 箭头样式 */
+  .button-nav::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    border-color: #89c967 transparent transparent transparent;
+  }
+  
+  /* 上一页按钮的箭头 */
+  .button-nav.prev::after {
+    right: 20px; /* 根据按钮宽度和设计调整箭头位置 */
+  }
+  
+  /* 下一页按钮的箭头 */
+  .button-nav.next::after {
+    left: 20px; /* 根据按钮宽度和设计调整箭头位置 */
+    transform: translateY(-50%) rotate(225deg); /* 调整箭头方向 */
+  }
+  
+  /* 确保箭头在按钮文本之后显示 */
+  .button-nav span {
+    position: relative;
+    z-index: 1;
+  }
+  </style>
+</head>
+<body>
+
+  <button class="button-nav prev" onclick="goToPage('previous')">
+    <span> << Previous Page</span>
+  </button>
+  <button class="button-nav next" onclick="goToPage('next')">
+    <span>Next Page >> </span>
+  </button>
+
+  <script>
+    function goToPage(direction) {
+      alert('Go to ' + direction + ' page');
+      // 你的页面跳转逻辑
+    }
+  </script>
+
+</body>
+</html>

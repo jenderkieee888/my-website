@@ -8,6 +8,7 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+
 		.button-nav {
 			display: inline-block; /* 使按钮内联显示，方便设置宽度 */
 			width: 170px; /* 固定按钮宽度，根据需要调整 */
@@ -64,7 +65,7 @@
 		
 		/* 下一页按钮的定位 */
 		.button-nav.next {
-			left: 373px; /* 根据需要调整距离右边的距离 */
+			left: 200px; /* 根据需要调整距离右边的距离 */
 		}
 
 	</style>
@@ -80,13 +81,10 @@
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">Dear 宝，</span><br />
-				<span class="space"/><span class="comments">耶耶耶！截止这周四（5.9），我们就认识一百天啦！！！我们度过了我们的第一个一百天诶！！！🎉🎉🎉</span><br />
-				<span class="space"/><span class="comments">还是先骚瑞啊宝，一封回信一直拖到现在，其实也是想找一个比较特别的时间点给你，认识两个月的时候你给我写了一封信，然后我就在想要不就认识一百天的时候把我写的回信给你，让你等太久啦骚瑞～</span><br />
-				<span class="space"/><span class="comments">哦对了，这次回信的形式也有点特别哦，带你体验一下程序员🧑‍💻的浪漫！！！</span><br />
 
+				<span class="space"/>原谅我有时候太希望你快点做出改变，你的学习态度、思维方式等等，可能语气很凶让你伤心了骚瑞～🥺但是我经常会反思，“凶”并不能让你迅速做出改变，反而会让你更加反感，因此我的结论是，第一：改变需要时间，你才16岁，16岁的熊博宁可比16岁的王文馨不懂事多了，要相信你会慢慢理解我说的话；第二：也不一定要按照我的方式去思考，可能在你慢慢成长的过程中，能够形成一个更加高级且适合你的思维方式，说不定比我的思维方式更好。能够得出这样的结论我觉得也是因为爱呀，因为爱，所以信任，也相信我们的未来会很美好！<br />
+				
 			</div>
-
 
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -103,7 +101,11 @@
 			</div>
 		</div>
 
-		<button class="button-nav next" onclick="goToPage(2)">
+		<button class="button-nav prev" onclick="goToPage(4)">
+			<span> << Previous Page</span>
+		  </button>
+		
+		<button class="button-nav next" onclick="goToPage(6)">
 			<span>Next Page >> </span>
 		</button>
 	

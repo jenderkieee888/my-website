@@ -8,6 +8,7 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+
 		.button-nav {
 			display: inline-block; /* 使按钮内联显示，方便设置宽度 */
 			width: 170px; /* 固定按钮宽度，根据需要调整 */
@@ -64,7 +65,7 @@
 		
 		/* 下一页按钮的定位 */
 		.button-nav.next {
-			left: 373px; /* 根据需要调整距离右边的距离 */
+			left: 200px; /* 根据需要调整距离右边的距离 */
 		}
 
 	</style>
@@ -80,13 +81,9 @@
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">Dear 宝，</span><br />
-				<span class="space"/><span class="comments">耶耶耶！截止这周四（5.9），我们就认识一百天啦！！！我们度过了我们的第一个一百天诶！！！🎉🎉🎉</span><br />
-				<span class="space"/><span class="comments">还是先骚瑞啊宝，一封回信一直拖到现在，其实也是想找一个比较特别的时间点给你，认识两个月的时候你给我写了一封信，然后我就在想要不就认识一百天的时候把我写的回信给你，让你等太久啦骚瑞～</span><br />
-				<span class="space"/><span class="comments">哦对了，这次回信的形式也有点特别哦，带你体验一下程序员🧑‍💻的浪漫！！！</span><br />
-
+				<span class="space"/>你的情绪能量场真的很强大，能够感染身边很多人（嗯…有时候觉得自己挺没能力的吧，当你心情好的时候，我能很轻松地给你讲讲笑话让你的心情变更好；但如果你心情差，有时候也不知道咋安慰你…但是别担心，我不会放弃的，只要你需要，我就会尽我所能地安慰你、抱抱你，嗯，一直都会是这样），有时候我其实很害怕如果我们的关系发展到你之前说的“冷淡期”了会怎么样，我还能不能让你找回当初的热情，但是后来我就想这份热情终将会褪去的，“光环”、“容貌”这些都是快餐，天天吃总会腻的，只有“踏实”、“真诚”、“善良”才是最核心的吸引力，就像家人👪一样，从来不会有防备，从来不会互相揣测，你从来不会担心他们会不会哪天突然想离开你，永远都在那，和港湾一样。所以我很希望成为你的家人呀，这样我们就永远不会分开啦，有什么事就跟我说，不要留在心里互相减分，我们是要走一辈子的好吗，嗯？<br />
+				<span class="space"/>"Love can fight everything～"，好奇妙啊这种感觉，和你在一起的不同阶段，我对这句歌词都有不同的感悟。在我复试的时候，你的鼓励、你的陪伴是我前进的勇气😊，也让我越来越自信，在你的鼓励下，我觉得"I can fight everything"；在我们之间发生矛盾的时候，你对我的爱转化成了我对你的信任，让我坚信在未来"We can fight everything"。<br />
 			</div>
-
 
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -103,7 +100,11 @@
 			</div>
 		</div>
 
-		<button class="button-nav next" onclick="goToPage(2)">
+		<button class="button-nav prev" onclick="goToPage(3)">
+			<span> << Previous Page</span>
+		  </button>
+		
+		<button class="button-nav next" onclick="goToPage(5)">
 			<span>Next Page >> </span>
 		</button>
 	

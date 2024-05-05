@@ -8,6 +8,7 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+
 		.button-nav {
 			display: inline-block; /* 使按钮内联显示，方便设置宽度 */
 			width: 170px; /* 固定按钮宽度，根据需要调整 */
@@ -64,7 +65,7 @@
 		
 		/* 下一页按钮的定位 */
 		.button-nav.next {
-			left: 373px; /* 根据需要调整距离右边的距离 */
+			left: 200px; /* 根据需要调整距离右边的距离 */
 		}
 
 	</style>
@@ -79,12 +80,10 @@
 <body>
 	<div id="mainDiv">
 		<div id="content">
-			<div id="code">
-				<span class="comments">Dear 宝，</span><br />
-				<span class="space"/><span class="comments">耶耶耶！截止这周四（5.9），我们就认识一百天啦！！！我们度过了我们的第一个一百天诶！！！🎉🎉🎉</span><br />
-				<span class="space"/><span class="comments">还是先骚瑞啊宝，一封回信一直拖到现在，其实也是想找一个比较特别的时间点给你，认识两个月的时候你给我写了一封信，然后我就在想要不就认识一百天的时候把我写的回信给你，让你等太久啦骚瑞～</span><br />
-				<span class="space"/><span class="comments">哦对了，这次回信的形式也有点特别哦，带你体验一下程序员🧑‍💻的浪漫！！！</span><br />
 
+			<div id="code">
+				<span class="space"/>你知道吗，一个月前你在图书馆递给我你写的信的时候，我真的好惊喜，因为这是我第一次收到别人的手写信✉️呀，而且字里行间体现出来的真挚让我真的好感动，经常想你了就会拿出来看看，就像你在我身边陪我聊天一样，很治愈～<br />
+				<span class="space"/>不知道该说时间🕙过得快还是慢了，每次跟你分开之后就感觉时间过得好慢呀，为什么还没有等到下一次的见面；但每次跟你在一起的时候就又感觉时间过得好快，见面没多久就要听到经典的“我要回家🏠了～”。跟你在一起的时候经常会有时空错乱的感觉，好像昨天我们才在传统文化节认识，今天我们对彼此就已经这么依赖了。我们是多么信任彼此呀，以至于直接跳过了“相识”、“相知”，一起约定坠入爱河。<br />
 			</div>
 
 
@@ -103,15 +102,25 @@
 			</div>
 		</div>
 
-		<button class="button-nav next" onclick="goToPage(2)">
+		<div>
+		<button class="button-nav prev" onclick="goToPage(1)">
+			<span> << Previous Page</span>
+		  </button>
+		
+		<button class="button-nav next" onclick="goToPage(3)">
 			<span>Next Page >> </span>
 		</button>
+	</div>
 	
 	</div>
 
 	<script type="text/javascript">
 		function goToPage(pageNumber) {
 			var pageName = "index" + pageNumber + ".html";
+			if(pageNumber == 1)
+			{
+				pageName= "index.html";
+			}
 			window.location.href = pageName;
 		}
 	</script>

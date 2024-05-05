@@ -8,6 +8,7 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+
 		.button-nav {
 			display: inline-block; /* 使按钮内联显示，方便设置宽度 */
 			width: 170px; /* 固定按钮宽度，根据需要调整 */
@@ -64,7 +65,7 @@
 		
 		/* 下一页按钮的定位 */
 		.button-nav.next {
-			left: 373px; /* 根据需要调整距离右边的距离 */
+			left: 200px; /* 根据需要调整距离右边的距离 */
 		}
 
 	</style>
@@ -80,13 +81,11 @@
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">Dear 宝，</span><br />
-				<span class="space"/><span class="comments">耶耶耶！截止这周四（5.9），我们就认识一百天啦！！！我们度过了我们的第一个一百天诶！！！🎉🎉🎉</span><br />
-				<span class="space"/><span class="comments">还是先骚瑞啊宝，一封回信一直拖到现在，其实也是想找一个比较特别的时间点给你，认识两个月的时候你给我写了一封信，然后我就在想要不就认识一百天的时候把我写的回信给你，让你等太久啦骚瑞～</span><br />
-				<span class="space"/><span class="comments">哦对了，这次回信的形式也有点特别哦，带你体验一下程序员🧑‍💻的浪漫！！！</span><br />
-
+			
+				<span class="space"/>遇到你之后，我经常觉得自己真的好幸运好幸福🌟，试问有什么是比“我深爱的人也深爱着我”更幸福的呢？我非常珍惜你啊，你是我的第一位爱人，因为在你地方我第一次体会到什么是“爱”以及应该如何表达爱，你真的是一个非常擅长表达爱的人，我也经常跟你提起说“我好幸福，一直在被爱”，我也在用我的方式表达我对你的爱❤️，你感受到了吗？<br />
+				<span class="space"/>对你的爱，已经不局限于“喜欢”了，更多的是“包容”，就像那天晚上你看到那句“我们纵横交错，最后回到原点”破防之后，我真的很想抱抱你🫂，第二天你在地铁站蹲着等我的时候哭了，我好难过，我知道你肯定想骂自己昨晚为什么这么矫情，但是其实我早就习惯了包容你，因为没有“矫情”的你，又怎么会有一个这么会表达爱的你呢？这都是感性的王文馨，我们要接受自己的所有，没有什么是绝对对或者绝对错的，做自己是最重要的，你很棒、很优秀，知道吗？<br />
+				
 			</div>
-
 
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -102,8 +101,12 @@
 				</div>
 			</div>
 		</div>
-
-		<button class="button-nav next" onclick="goToPage(2)">
+		
+		<button class="button-nav prev" onclick="goToPage(2)">
+			<span> << Previous Page</span>
+		  </button>
+		
+		<button class="button-nav next" onclick="goToPage(4)">
 			<span>Next Page >> </span>
 		</button>
 	
